@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@antibot/interactions@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@antibot/interactions/-/interactions-1.4.0.tgz#566c676e6bfb2d0d745b6b57907c466c78c47014"
-  integrity sha512-T8MirLCR7X4/SoVkVJ6rhSluVMvqVhEHFyBhv148pP6DeeF6vX6zYvPA5nbdIKWI5LrDwdUO0NsVGTeLit4WBg==
+"@antibot/interactions@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@antibot/interactions/-/interactions-1.4.1.tgz#e167e16c4577b2951a927aa06b4462f6c3cf28b9"
+  integrity sha512-IZAfPU5NCBIL5as5CHr8HE6fyTi8AgWlnKWvUMdgRYrqtCg+UzwCwOYoGF/t+w1FoEGyMmgOX5vmFgZUTF5xuA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^7.4.0"
     "@typescript-eslint/parser" "^7.4.0"

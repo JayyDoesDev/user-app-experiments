@@ -8,7 +8,7 @@
     "start": "cake build && node js/index.js"
   },
   "dependencies": {
-    "@antibot/interactions": "^1.4.0",
+    "@antibot/interactions": "^1.4.1",
     "@antibot/server": "^1.1.3",
     "discord-interactions": "^3.4.0",
     "dotenv": "^16.4.5",
