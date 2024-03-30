@@ -11,6 +11,6 @@ VerifyDiscordRequest = (key) ->
         isValidRequest = verifyKey buf, signature, timestamp, key
         res.status(400).send "Bad request signature" unless isValidRequest
 
-router.use express.json verify: VerifyDiscordRequest key
+router.use express.json verify: VerifyDiscordRequest process.env.PUBLIC_KEY
 
 exports.default = router
