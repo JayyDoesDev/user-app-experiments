@@ -1,0 +1,15 @@
+{
+  "name": "user-app-experiments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "J_DDev <69683068+JayyDoesDev@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cake build && node js/index.js"
+  },
+  "dependencies": {
+    "@antibot/interactions": "^1.4.0",
+    "@antibot/server": "^1.1.3",
+    "which": "git+https://github.com/Kiiro-Dev/node-which.git"
+  }
+}
