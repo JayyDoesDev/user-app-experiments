@@ -1,9 +1,8 @@
 { Router } = require "@antibot/server"
-{ InteractionResponseType } = require "discord-interactions"
+{ InteractionResponseType, verifyKeyMiddleware } = require "discord-interactions"
 router = Router()
 
-router.post "/interactions", (req, res) ->
-    console.log req.body
+# had issues with middleware so used the one Discord made
+router.post "/interactions", verifyKeyMiddleware process.env.PUBLIC_KEY, (req, res) ->
     res.send type: InteractionResponseType.PONG if req.body.type is InteractionResponseType.PING
-    console.log req.body
 exports.default = router
