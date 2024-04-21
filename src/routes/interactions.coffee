@@ -3,13 +3,12 @@
 router = Router()
 
 # had issues with middleware so used the one Discord made
-router.post "/interactions", verifyKeyMiddleware process.env.PUBLIC_KEY, (req, res) ->
-    console.log res
+router.post "/interactions",  verifyKeyMiddleware(process.env.PUBLIC_KEY), (req, res) ->
     { type, data } = req.body
     res.send type: InteractionResponseType.PONG if type is InteractionType.PING
     if type is InteractionType.APPLICATION_COMMAND
         { name } = data
-        if name is "ping"
+        if name is "p"
             return res.send 
                         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE
                         data: content: "pong"
